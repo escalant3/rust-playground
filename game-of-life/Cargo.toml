@@ -1,0 +1,8 @@
+[package]
+
+name = "game_of_life"
+version = "0.2.0"
+authors = [ "escalant3@gmail.com" ]
+
+[[bin]]
+name = "game_of_life"
