@@ -18,6 +18,7 @@ extern crate collections;
 
 use std::path::Path;
 use std::io::{File, Open, Read};
+use std::time::duration::Duration;
 use collections::string::String;
 
 
@@ -209,7 +210,7 @@ fn create_world_from_file(file_name: &str) -> World  {
 
 fn main() {
     // Constants
-    static TIME_STEP:u64 = 100;
+    let TIME_STEP = Duration::milliseconds(100);
 
     // Create world
     let mut world = create_world_from_file("conway-data.dat");
